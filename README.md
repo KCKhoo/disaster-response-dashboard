@@ -11,9 +11,11 @@
 
 <a id="overview"></a>
 ## Project Overview
-The goal of this project is to create a web dashboard that disaster response organizations can use to help them in classifying disaster messages into one or several categories using a machine learning (ML) model. There are 36 categories in total, and some examples of the categories are water, food, shelter, storm and aid_related. To classify a message, the user can simply enter the message in the provided text box. Subsequently, the dashboard will classify the message using the machine learning model and display the category(s). The web dashboard will also display visualizations of disaster data.
+The goal of this project is to create a web dashboard that disaster response organizations can use to help them in classifying disaster messages into one or several categories, out of 36 categories, using a machine learning (ML) model. In other words, the machine learning will perform multi-output classification on the 36 categories. Some examples of the categories are water, food, shelter, storm and aid_related. To classify a message, the user can simply enter the message in the provided text box. Subsequently, the dashboard will classify the message using the machine learning model and display the category(s). The web dashboard will also display visualizations of disaster data.
 
-To achieve the goal, a ETL pipeline was first created to prepare data for training machine learning models. Subsequently, a machine learning pipeline was defined to train and validate machine learning models with preprocessed training and validation data. Finally, a web dashboard with the aforementioned features was created.
+To achieve the goal, a ETL pipeline was first created to prepare data for training machine learning models. Subsequently, a machine learning pipeline was defined to train and validate machine learning models using precision and recall metrics*. Finally, a web dashboard with the aforementioned features was created.
+
+\*As the data for certain categories is imbalanced, accuracy is not a good metric to evaluate the performance of the model on each category. This is because accuracy will provide a false perception of the actual model performance when data is imbalanced. Therefore, the chosen evaluation metrics are precision and recall.
 
 <a id="installation"></a>
 ## Installation
