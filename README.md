@@ -58,7 +58,11 @@ python train_classifier.py ../data/DisasterResponse.db classifier.pkl
 
 <a id="screenshots"></a>
 ## Screenshots of Web Dashboard
-
+<img src="screenshots/ss1.PNG" alt-text='visualization1'>
+<img src="screenshots/ss2.PNG" alt-text='visualization1'>
+<img src="screenshots/ss3.PNG" alt-text='classification1'>
+<img src="screenshots/ss4.PNG" alt-text='classification2'>
+<img src="screenshots/ss5.PNG" alt-text='classification3'>
 
 <a id="licensing"></a>
 ## Licensing, Authors, and Acknowledgements
